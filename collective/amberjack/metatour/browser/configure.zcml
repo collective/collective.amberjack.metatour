@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.amberjack.metatour">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+      for="collective.amberjack.metatour.interfaces.Iajtour"
+      name="js_view"
+      class=".jsview.jsView"
+      template="jsview.pt"
+      allowed_interface=".jsview.IjsView"
+      permission="zope.Public"
+      />
+
+
+</configure>

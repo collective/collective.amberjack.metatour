@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="collective.amberjack.metatour">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".ajtour.ajtour">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.Iajtour"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.Iajtour"
+        />
+  </class>
+  <class class=".ajstep.ajstep">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.Iajstep"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.Iajstep"
+        />
+  </class>
+
+</configure>

@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: collective.amberjack.metatour
+Version: 1.0dev
+Summary: Let you create an amberjack tutorial TTW
+Home-page: UNKNOWN
+Author: Massimo Azzolini, Giacomo Spettoli
+Author-email: massimo@redturtle.net
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        Changelog
+        =========
+        
+        1.0 (xxxx-xx-xx)
+        ----------------
+        
+        * Initial release
+        
+Keywords: amberjack metatour tutorial
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

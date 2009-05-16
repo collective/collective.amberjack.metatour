@@ -1,0 +1,14 @@
+README.txt
+setup.cfg
+setup.py
+collective/__init__.py
+collective.amberjack.metatour.egg-info/PKG-INFO
+collective.amberjack.metatour.egg-info/SOURCES.txt
+collective.amberjack.metatour.egg-info/dependency_links.txt
+collective.amberjack.metatour.egg-info/entry_points.txt
+collective.amberjack.metatour.egg-info/namespace_packages.txt
+collective.amberjack.metatour.egg-info/not-zip-safe
+collective.amberjack.metatour.egg-info/requires.txt
+collective.amberjack.metatour.egg-info/top_level.txt
+collective/amberjack/__init__.py
+collective/amberjack/metatour/__init__.py
