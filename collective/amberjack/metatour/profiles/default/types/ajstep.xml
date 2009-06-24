@@ -2,7 +2,7 @@
 <object name="ajstep"
    meta_type="Factory-based Type Information with dynamic views"
    i18n:domain="collective.amberjack.metatour" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="">ajstep</property>
+  <property name="title" i18n:translate="">amberjack step</property>
   <property name="description"
     i18n:translate="">Amberjack-plone tour step</property>
   <property name="content_meta_type">ajstep</property>

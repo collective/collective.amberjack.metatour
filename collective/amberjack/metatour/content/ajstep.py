@@ -6,42 +6,53 @@ from zope.interface import implements, directlyProvides
 from Products.Archetypes import atapi
 from Products.ATContentTypes.content import base
 from Products.ATContentTypes.content import schemata
+from Products.Archetypes.public import DisplayList
 
 from collective.amberjack.metatour import ajmetatourMessageFactory as _
 from collective.amberjack.metatour.interfaces import Iajstep
 from collective.amberjack.metatour.config import PROJECTNAME
 
+from Products.DataGridField import DataGridField, DataGridWidget
+from Products.DataGridField.Column import Column
+from Products.DataGridField.SelectColumn import SelectColumn
+
+from collective.amberjack.core.javascript.ajStandardSteps import ajStandardSteps
+
 ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
 
-    # -*- Your Archetypes field definitions here ... -*-
     atapi.StringField(
-        'type_step',
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.StringWidget(
-            label=_(u"Step Type"),
-            description=_(u"Field description"),
-        ),
-        required=True,
+        'url',
+    ),
+                                                                   
+    atapi.TextField(
+        'text',
+        widget=atapi.RichWidget(
+            label="user's description",
+            description = "Enter a description for the user"
+        )
     ),
 
-
-    atapi.StringField(
-        'jq_selector',
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.StringWidget(
-            label=_(u"Jquery Selector"),
-            description=_(u"Field description"),
-        ),
-    ),
-
-
-    atapi.StringField(
-        'value_step',
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.StringWidget(
-            label=_(u"Step Value"),
-            description=_(u"Field description"),
-        ),
+    DataGridField(
+        'steps',
+        columns=('description','idStep', 'selector', 'text'),
+        allow_empty_rows = False, # Must be false to make auto insert feature perform correctly
+        widget = DataGridWidget(
+            label = "Amberjack' steps",
+            description = """Enter:<ol>
+            <li>the description for the user (use [] to <span class="ajHighlight">highlight</span> parts),</li> 
+            <li>the step id,  </li>
+            <li>an optional selector</li>
+            <li>an optional text used by the step</li>
+            </ol>
+            """,
+            auto_insert = True,
+            columns={
+                'description': Column("Description"),
+                'idStep' : SelectColumn("Step", vocabulary="getStepsVocabulary"),
+                'selector' : Column("A css or xpath selector"),
+                'text' : Column("The text associated with the step")
+            },
+       ),
     ),
 
 ))
@@ -65,9 +76,11 @@ class ajstep(base.ATCTContent):
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
     
-    # -*- Your ATSchema to Python Property Bridges Here ... -*-
-    type_step = atapi.ATFieldProperty('type_step')
-    jq_selector = atapi.ATFieldProperty('jq_selector')
-    value_step = atapi.ATFieldProperty('value_step')
+    def getStepsVocabulary(self):
+        return DisplayList(
+                     ((key, key) for (key, value) in (('None', ''),) + ajStandardSteps)
+                     )
+
+        
 
 atapi.registerType(ajstep, PROJECTNAME)

@@ -1,7 +1,7 @@
 """Definition of the ajtour content type
 """
 
-from zope.interface import implements, directlyProvides
+from zope.interface import implements
 
 from Products.Archetypes import atapi
 from Products.ATContentTypes.content import folder
@@ -10,7 +10,6 @@ from Products.ATContentTypes.content import schemata
 from collective.amberjack.metatour import ajmetatourMessageFactory as _
 from collective.amberjack.metatour.interfaces import Iajtour
 from collective.amberjack.metatour.config import PROJECTNAME
-from Products.CMFCore.permissions import ListFolderContents
 
 
 ajtourSchema = folder.ATFolderSchema.copy() + atapi.Schema((
@@ -18,6 +17,7 @@ ajtourSchema = folder.ATFolderSchema.copy() + atapi.Schema((
     # -*- Your Archetypes field definitions here ... -*-
     atapi.StringField(
         'tourId',
+        searchable=True,
         storage=atapi.AnnotationStorage(),
         widget=atapi.StringWidget(
             label=_(u"Tour Id"),
@@ -65,17 +65,6 @@ class ajtour(folder.ATFolder):
     
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
     _at_rename_after_creation = True
-    def steps(self):
-        "Get nodes contained in this folder."
-        output = list()
-
-        for item in self.listFolderContents():
-            "if isinstance(item, ajStep):"
-            output.append(item)
-
-        output.sort()
-        output.reverse()
-        return output
     
     def getTourId(self):
         return self.tourId

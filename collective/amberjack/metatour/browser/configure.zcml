@@ -9,12 +9,18 @@
 
   <browser:page
       for="collective.amberjack.metatour.interfaces.Iajtour"
-      name="js_view"
-      class=".jsview.jsView"
-      template="jsview.pt"
-      allowed_interface=".jsview.IjsView"
+      name="tour"
+      class=".tour.Tour"
+      template="tour.pt"
+      allowed_interface=".tour.ITour"
       permission="zope.Public"
       />
-
+	
+  <browser:viewlet
+     name="collective.amberjackmetatour"
+     manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+     permission="zope2.View"
+     class=".viewlets.TourViewlet"
+     />
 
 </configure>

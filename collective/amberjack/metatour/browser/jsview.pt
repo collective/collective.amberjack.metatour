@@ -1,7 +1,0 @@
-<metal:folderlisting_macro metal:define-macro="folderlisting">
-  AjSteps = {
-  <metal tal:repeat="step python:context.steps()" tal:omit-tag="">
-      '<span tal:replace="python:step.Title()" ></span>': new AjStep('<span tal:replace="python:step.type_step"></span>','<span tal:replace="python:step.jq_selector"></span>','<span tal:replace="python:step.value_step"></span>')<span tal:condition="not: repeat/step/end" tal:omit-tag="">,</span>
-  </metal>
-  }
-</metal:folderlisting_macro>

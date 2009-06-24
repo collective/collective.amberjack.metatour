@@ -10,11 +10,15 @@
   <include package=".browser" />
   <include package=".content" />
   <include package=".portlets" />
+  <utility
+    component=".vocabulary.AvailableMetatoursVocabularyFactory"
+    name="collective.amberjack.metatour.tours"
+    />
   
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
-      title="Amberjack-Plone Meta Tour"
+      title="Amberjack Meta Tour"
       directory="profiles/default"
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
