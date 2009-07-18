@@ -24,7 +24,7 @@ class TourViewlet(common.ViewletBase):
             except KeyError:
                 tourId = self.request.cookies['ajcookie_tourId']
             portal_catalog = getToolByName(self.context, 'portal_catalog', None)
-            tour = portal_catalog(portal_type='ajtour', tourId=tourId)
+            tour = portal_catalog(portal_type='ajtour', getTourId=tourId)
             try:
                 view = getMultiAdapter((tour[0].getObject(), self.request), name='tour')
                 return view()

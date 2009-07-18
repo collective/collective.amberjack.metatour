@@ -47,6 +47,8 @@ class Tour(BrowserView):
                 'title': item.title,
                 'text': item.getText(),
                 'steps': self._highlight(self.getSteps(item)),
+                'xpath': item.getXpath(),
+                'xcontent': item.getXcontent(),
                 }
             output.append(d)
 

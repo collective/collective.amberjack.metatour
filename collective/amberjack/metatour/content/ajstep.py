@@ -20,16 +20,24 @@ from collective.amberjack.core.javascript.ajStandardSteps import ajStandardSteps
 
 ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
 
-    atapi.StringField(
-        'url',
-    ),
-                                                                   
     atapi.TextField(
         'text',
         widget=atapi.RichWidget(
             label="user's description",
             description = "Enter a description for the user"
         )
+    ),
+
+    atapi.StringField(
+        'url',
+    ),
+    
+    atapi.StringField(
+        'xpath',
+    ),
+    
+    atapi.StringField(
+        'xcontent',
     ),
 
     DataGridField(
