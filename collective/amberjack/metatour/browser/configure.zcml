@@ -15,12 +15,5 @@
       allowed_interface=".tour.ITour"
       permission="zope.Public"
       />
-	
-  <browser:viewlet
-     name="collective.amberjackmetatour"
-     manager="plone.app.layout.viewlets.interfaces.IBelowContent"
-     permission="zope2.View"
-     class=".viewlets.TourViewlet"
-     />
 
 </configure>

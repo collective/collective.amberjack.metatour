@@ -4,8 +4,8 @@ from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
 
 from collective.amberjack.metatour import ajmetatourMessageFactory as _
-from docutils.nodes import description
 
+from collective.amberjack.core.browser import tour
 
 class ITour(Interface):
     """
@@ -13,7 +13,7 @@ class ITour(Interface):
     """
 
 
-class Tour(BrowserView):
+class Tour(tour.TourView):
     """
     tour view
     """
@@ -75,29 +75,8 @@ class Tour(BrowserView):
             steps.append(step)
         return tuple(steps)
         
-    def javascriptSteps(self):
-        """
-        {'text': '', 'idStep': 'view_tabular', 'description': 'uno', 'selector': ''}
-        """
-        aj = """
-        var AjSteps = {
-                """
-        for idx, step in enumerate(self.ajsteps):
-            ajstep = """'%s': new AjStep('%s','%s','%s')""" % (idx + 1, step['idStep'], step['selector'], step['text'])
-            if idx + 1 != len(self.ajsteps):
-                ajstep += """,
-                """
-            aj += ajstep
-        
-        return aj + """
-        }
-        """
-        
     
     @property
     def portal_catalog(self):
         return getToolByName(self.context, 'portal_catalog')
-
-    @property
-    def portal(self):
-        return getToolByName(self.context, 'portal_url')
+    

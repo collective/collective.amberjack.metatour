@@ -25,6 +25,7 @@ setup(name='collective.amberjack.metatour',
       install_requires=[
           'setuptools',
           'Products.DataGridField',
+          'collective.amberjack.core',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
