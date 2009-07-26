@@ -6,14 +6,14 @@
   <include package="plone.app.contentmenu" />
 
   <!-- -*- extra stuff goes here -*- -->
-
+	
   <browser:page
       for="collective.amberjack.metatour.interfaces.Iajtour"
       name="tour"
       class=".tour.Tour"
       template="tour.pt"
-      allowed_interface=".tour.ITour"
       permission="zope.Public"
       />
+
 
 </configure>

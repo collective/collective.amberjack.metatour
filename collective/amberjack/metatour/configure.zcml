@@ -10,10 +10,6 @@
   <include package=".browser" />
   <include package=".content" />
   <include package=".portlets" />
-  <utility
-    component=".vocabulary.AvailableMetatoursVocabularyFactory"
-    name="collective.amberjack.metatour.tours"
-    />
   
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
