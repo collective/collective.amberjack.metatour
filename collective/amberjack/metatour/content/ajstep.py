@@ -23,8 +23,8 @@ ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
     atapi.TextField(
         'text',
         widget=atapi.RichWidget(
-            label="user's description",
-            description = "Enter a description for the user"
+            label=_(u"user's description"),
+            description=_(u"Enter a description for the user")
         )
     ),
 
@@ -43,22 +43,22 @@ ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
     DataGridField(
         'steps',
         columns=('description','idStep', 'selector', 'text'),
-        allow_empty_rows = False, # Must be false to make auto insert feature perform correctly
-        widget = DataGridWidget(
-            label = "Amberjack' steps",
-            description = """Enter:<ol>
-            <li>the description for the user (use [] to <span class="ajHighlight">highlight</span> parts),</li> 
-            <li>the step id,  </li>
+        allow_empty_rows=False, # Must be false to make auto insert feature perform correctly
+        widget=DataGridWidget(
+            label=_(u"Amberjack' steps"),
+            description = _(u"""Enter:<ol>
+            <li>the description for the user (use [] to <span class="ajHighlight">highlight</span> parts)</li>
+            <li>the step id</li>
             <li>an optional selector</li>
             <li>an optional text used by the step</li>
             </ol>
-            """,
-            auto_insert = True,
+            """),
+            auto_insert=True,
             columns={
-                'description': Column("Description"),
-                'idStep' : SelectColumn("Step", vocabulary="getStepsVocabulary"),
-                'selector' : Column("A css or xpath selector"),
-                'text' : Column("The text associated with the step")
+                'description': Column(_(u"Description")),
+                'idStep' : SelectColumn(_(u"Step"), vocabulary="getStepsVocabulary"),
+                'selector' : Column(_(u"A css or xpath selector")),
+                'text' : Column(_(u"The text associated with the step"))
             },
        ),
     ),
@@ -89,6 +89,5 @@ class ajstep(base.ATCTContent):
                      ((key, key) for (key, value) in (('None', ''),) + ajStandardSteps)
                      )
 
-        
 
 atapi.registerType(ajstep, PROJECTNAME)

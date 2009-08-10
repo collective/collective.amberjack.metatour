@@ -12,8 +12,4 @@
     meta_type="Factory-based Type Information with dynamic views" />
   <object name="ajstep"
     meta_type="Factory-based Type Information with dynamic views" />
-  <object name="ajtour"
-    meta_type="Factory-based Type Information with dynamic views" />
-  <object name="ajstep"
-    meta_type="Factory-based Type Information with dynamic views" />
 </object>

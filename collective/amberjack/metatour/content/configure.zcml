@@ -1,6 +1,5 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:five="http://namespaces.zope.org/five"
     i18n_domain="collective.amberjack.metatour">
 
   <!-- configure your content components here -->
@@ -26,7 +25,5 @@
         set_schema="..interfaces.Iajstep"
         />
   </class>
-
-
 
 </configure>

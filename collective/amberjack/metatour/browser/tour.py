@@ -3,14 +3,12 @@ from collective.amberjack.core.browser import tour
 
 
 class Tour(tour.TourView):
-    """
-    tour view
-    """    
+    """Tour view."""
     def tourId(self):
         return self.context.tourId
         
     def steps(self):
-        """returns a dict:
+        """Return a dict:
         {
         url: ..., 
         title: ..., 
@@ -33,10 +31,9 @@ class Tour(tour.TourView):
                 'xcontent': item.getXcontent(),
                 }
             output.append(d)
-
+        
         return output
-            
+    
     def getSteps(self, item):
         return tuple(item.getSteps())
-        
-    
+

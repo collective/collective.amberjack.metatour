@@ -10,13 +10,5 @@
       <role name="Manager" />
       <role name="Contributor" />
     </permission>
-    <permission name="collective.amberjack.metatour: Add ajtour" acquire="False">
-      <role name="Manager" />
-      <role name="Contributor" />
-    </permission>
-    <permission name="collective.amberjack.metatour: Add ajstep" acquire="False">
-      <role name="Manager" />
-      <role name="Contributor" />
-    </permission>
   </permissions>
 </rolemap>

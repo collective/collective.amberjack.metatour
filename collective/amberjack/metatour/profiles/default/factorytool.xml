@@ -12,7 +12,5 @@
     <!-- -*- extra stuff goes here -*- -->
     <type portal_type="ajtour" />
     <type portal_type="ajstep" />
-    <type portal_type="ajtour" />
-    <type portal_type="ajstep" />
   </factorytypes>
 </object>
