@@ -3,17 +3,11 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="collective.amberjack.metatour">
 
-  <include package="plone.app.contentmenu" />
-
-  <!-- -*- extra stuff goes here -*- -->
-	
   <browser:page
       for="collective.amberjack.metatour.interfaces.Iajtour"
       name="tour"
       class=".tour.Tour"
-      template="tour.pt"
       permission="zope.Public"
       />
-
 
 </configure>
