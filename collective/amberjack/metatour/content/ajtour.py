@@ -26,17 +26,6 @@ ajtourSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         required=True,
     ),
 
-
-    atapi.StringField(
-        'skinId',
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.StringWidget(
-            label=_(u"Skin Id"),
-            description=_(u"Field description"),
-        ),
-        required=True,
-    ),
-
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -61,7 +50,6 @@ class ajtour(folder.ATFolder):
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
     tourId = atapi.ATFieldProperty('tourId')
-    skinId = atapi.ATFieldProperty('skinId')
     
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
     _at_rename_after_creation = True
