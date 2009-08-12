@@ -1,0 +1,79 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-08-12 14:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.amberjack.metatour\n"
+
+#: ../content/ajstep.py:54
+msgid "A css or xpath selector"
+msgstr ""
+
+#: ../content/ajstep.py:48
+msgid "Amberjack' steps"
+msgstr ""
+
+#. Default: "Amberjack-plone tour folder"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack-plone tour folder"
+msgstr ""
+
+#. Default: "Amberjack-plone tour step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack-plone tour step"
+msgstr ""
+
+#: ../content/ajstep.py:52
+msgid "Description"
+msgstr ""
+
+#: ../content/ajstep.py:27
+msgid "Enter a description for the user"
+msgstr ""
+
+#: ../content/ajstep.py:49
+msgid "Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"
+msgstr ""
+
+#: ../content/ajtour.py:24
+msgid "Field description"
+msgstr ""
+
+#: ../content/ajstep.py:53
+msgid "Step"
+msgstr ""
+
+#: ../content/ajstep.py:55
+msgid "The text associated with the step"
+msgstr ""
+
+#: ../content/ajtour.py:23
+msgid "Tour Id"
+msgstr ""
+
+#. Default: "amberjack step"
+#: ../profiles/default/types/ajstep.xml
+msgid "amberjack step"
+msgstr ""
+
+#. Default: "amberjack tour"
+#: ../profiles/default/types/ajtour.xml
+msgid "amberjack tour"
+msgstr ""
+
+#: ../content/ajstep.py:26
+msgid "user's description"
+msgstr ""
+

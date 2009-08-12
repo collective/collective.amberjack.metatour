@@ -46,13 +46,7 @@ ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         allow_empty_rows=False, # Must be false to make auto insert feature perform correctly
         widget=DataGridWidget(
             label=_(u"Amberjack' steps"),
-            description = _(u"""Enter:<ol>
-            <li>the description for the user (use [] to <span class="ajHighlight">highlight</span> parts)</li>
-            <li>the step id</li>
-            <li>an optional selector</li>
-            <li>an optional text used by the step</li>
-            </ol>
-            """),
+            description = _(u"Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"),
             auto_insert=True,
             columns={
                 'description': Column(_(u"Description")),
