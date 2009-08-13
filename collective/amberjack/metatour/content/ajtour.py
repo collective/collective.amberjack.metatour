@@ -21,7 +21,7 @@ ajtourSchema = folder.ATFolderSchema.copy() + atapi.Schema((
         storage=atapi.AnnotationStorage(),
         widget=atapi.StringWidget(
             label=_(u"Tour Id"),
-            description=_(u"Field description"),
+            description=_(u"The tour id is used to manage available tours"),
         ),
         required=True,
     ),

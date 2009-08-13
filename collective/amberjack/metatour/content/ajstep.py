@@ -23,7 +23,7 @@ ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
     atapi.TextField(
         'text',
         widget=atapi.RichWidget(
-            label=_(u"user's description"),
+            label=_(u"User's description"),
             description=_(u"Enter a description for the user")
         )
     ),
@@ -45,7 +45,7 @@ ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         columns=('description','idStep', 'selector', 'text'),
         allow_empty_rows=False, # Must be false to make auto insert feature perform correctly
         widget=DataGridWidget(
-            label=_(u"Amberjack' steps"),
+            label=_(u"Steps"),
             description = _(u"Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"),
             auto_insert=True,
             columns={

@@ -17,9 +17,9 @@
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
-      title="Amberjack Meta Tour"
+      title="Amberjack Tour Creator (Amberjack Meta Tour)"
       directory="profiles/default"
-      description=""
+      description="Adds content types to create an Amberjack tour"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   

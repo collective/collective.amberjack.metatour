@@ -1,87 +1,87 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# French translations for collective.amberjack.metatour package
+# Traductions françaises du paquet collective.amberjack.metatour.
+# Vincent Fretin <vincent.fretin@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: collective.amberjack.metatour\n"
 "POT-Creation-Date: 2009-08-13 12:27+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2009-08-13 14:27+0100\n"
+"Last-Translator: Vincent Fretin <vincent.fretin@gmail.com>\n"
+"Language-Team: French\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.amberjack.metatour\n"
 
 #: ../content/ajstep.py:54
 msgid "A css or xpath selector"
-msgstr ""
+msgstr "Un sélecteur css ou xpath"
 
 #: configure.zcml
 msgid "Adds content types to create an Amberjack tour"
-msgstr ""
+msgstr "Ajoute des types de contenu pour créer des visites Amberjack"
 
 #: configure.zcml
 msgid "Amberjack Tour Creator (Amberjack Meta Tour)"
-msgstr ""
+msgstr "Créateur de visite Amberjack (Amberjack Meta Tour)"
 
 #. Default: "Amberjack step"
 #: ../profiles/default/types/ajstep.xml
 msgid "Amberjack step"
-msgstr ""
+msgstr "Étape Amberjack"
 
 #. Default: "Amberjack tour"
 #: ../profiles/default/types/ajtour.xml
 msgid "Amberjack tour"
-msgstr ""
+msgstr "Visite Amberjack"
 
 #. Default: "Amberjack tour folder"
 #: ../profiles/default/types/ajtour.xml
 msgid "Amberjack tour folder"
-msgstr ""
+msgstr "Dossier visite Amberjack"
 
 #. Default: "Amberjack tour step"
 #: ../profiles/default/types/ajstep.xml
 msgid "Amberjack tour step"
-msgstr ""
+msgstr "Étape visite Amberjack"
 
 #: ../content/ajstep.py:52
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: ../content/ajstep.py:27
 msgid "Enter a description for the user"
-msgstr ""
+msgstr "Entrez une description pour l'utilisateur"
 
 #: ../content/ajstep.py:49
 msgid "Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"
-msgstr ""
+msgstr "Entrez :<ol> <li>la description pour l'utilisateur (utilisez [] pour <span class='ajHighlight'>surligner</span> des parties)</li> <li>l'id d'un selecteur prédéfini</li> <li>un sélecteur optionel</li> <li>un texte optionel utilisé par l'étape</li> </ol>"
 
 #: ../content/ajstep.py:53
 msgid "Step"
-msgstr ""
+msgstr "Étape"
 
 #: ../content/ajstep.py:48
 msgid "Steps"
-msgstr ""
+msgstr "Étapes"
 
 #: ../content/ajstep.py:55
 msgid "The text associated with the step"
-msgstr ""
+msgstr "Le texte associé à l'étape"
 
 #: ../content/ajtour.py:24
 msgid "The tour id is used to manage available tours"
-msgstr ""
+msgstr "L'id de la visite est utilisé pour gérer les visites disponibles"
 
 #: ../content/ajtour.py:23
 msgid "Tour Id"
-msgstr ""
+msgstr "Id de la visite"
 
 #: ../content/ajstep.py:26
 msgid "User's description"
-msgstr ""
+msgstr "Description utilisateur"
 
