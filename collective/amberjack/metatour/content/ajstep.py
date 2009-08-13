@@ -47,7 +47,8 @@ ajstepSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
         widget=DataGridWidget(
             label=_(u"Steps"),
             description = _(u"Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"),
-            auto_insert=True,
+            auto_insert=False,
+            allow_empty_rows=False,
             columns={
                 'description': Column(_(u"Description")),
                 'idStep' : SelectColumn(_(u"Step"), vocabulary="getStepsVocabulary"),
