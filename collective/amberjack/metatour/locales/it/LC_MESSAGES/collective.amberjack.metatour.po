@@ -1,0 +1,87 @@
+# Italian translations for collective.amberjack.metatour package
+# Traduzione italiana per il pacchetto collective.amberjack.metatour.
+# Massimo Azzolini <massimo.azzolini@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.amberjack.metatour\n"
+"POT-Creation-Date: 2009-08-13 12:27+0000\n"
+"PO-Revision-Date: 2009-08-13 14:27+0100\n"
+"Last-Translator: Massimo Azzolini <massimo.azzolini@gmail.com>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.amberjack.metatour\n"
+
+#: ../content/ajstep.py:54
+msgid "A css or xpath selector"
+msgstr "Un selettore css o un xpath"
+
+#: configure.zcml
+msgid "Adds content types to create an Amberjack tour"
+msgstr "Aggiunge tipi di contenuto per creare un tour Amberjack"
+
+#: configure.zcml
+msgid "Amberjack Tour Creator (Amberjack Meta Tour)"
+msgstr "Creatore di un tour Amberjack (Amberjack Meta Tour)"
+
+#. Default: "Amberjack step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack step"
+msgstr "Passo Amberjack"
+
+#. Default: "Amberjack tour"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack tour"
+msgstr "Tour Amberjack"
+
+#. Default: "Amberjack tour folder"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack tour folder"
+msgstr "Cartella di tour Amberjack"
+
+#. Default: "Amberjack tour step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack tour step"
+msgstr "Passo di tour Amberjack"
+
+#: ../content/ajstep.py:52
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../content/ajstep.py:27
+msgid "Enter a description for the user"
+msgstr "Inserisci una descrizone per l'utente"
+
+#: ../content/ajstep.py:49
+msgid "Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"
+msgstr "Inserisci :<ol> <li>la descrizione per l'utente (utilizza [] per <span class='ajHighlight'>evidenziare</span> delle parti)</li> <li>l'id del passo</li> <li>un selettore optionel</li> <li>un testo opzionale utilizzato dal passo</li> </ol>"
+
+#: ../content/ajstep.py:53
+msgid "Step"
+msgstr "Passo"
+
+#: ../content/ajstep.py:48
+msgid "Steps"
+msgstr "Passi"
+
+#: ../content/ajstep.py:55
+msgid "The text associated with the step"
+msgstr "Il testo associato al passo"
+
+#: ../content/ajtour.py:24
+msgid "The tour id is used to manage available tours"
+msgstr "L'id del tour è utilizzato per gestire i tour disponibili"
+
+#: ../content/ajtour.py:23
+msgid "Tour Id"
+msgstr "Id del tour"
+
+#: ../content/ajstep.py:26
+msgid "User's description"
+msgstr "Descrizione utente"
+
