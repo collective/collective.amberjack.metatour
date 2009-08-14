@@ -13,7 +13,7 @@ class TourAdapter(object):
 
     def tourId(self):
         """Return the tourId."""
-        return self.context.tourId
+        return self.context.getId()
 
     def title(self):
         """Return the title."""

@@ -13,19 +13,6 @@ from collective.amberjack.metatour.config import PROJECTNAME
 
 
 ajtourSchema = folder.ATFolderSchema.copy() + atapi.Schema((
-
-    # -*- Your Archetypes field definitions here ... -*-
-    atapi.StringField(
-        'tourId',
-        searchable=True,
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.StringWidget(
-            label=_(u"Tour Id"),
-            description=_(u"The tour id is used to manage available tours"),
-        ),
-        required=True,
-    ),
-
 ))
 
 # Set storage on fields copied from ATFolderSchema, making sure
@@ -49,12 +36,8 @@ class ajtour(folder.ATFolder):
 
     title = atapi.ATFieldProperty('title')
     description = atapi.ATFieldProperty('description')
-    tourId = atapi.ATFieldProperty('tourId')
     
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
     _at_rename_after_creation = True
     
-    def getTourId(self):
-        return self.tourId
-
 atapi.registerType(ajtour, PROJECTNAME)
