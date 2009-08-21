@@ -1,7 +1,11 @@
 Changelog
 =========
 
-1.0 (unreleased)
+1.0 (Unreleased)
 ----------------
+- fix browser tests [fdelia, amleczko]
 
+
+0.1 Released
+----------------
 - Initial release

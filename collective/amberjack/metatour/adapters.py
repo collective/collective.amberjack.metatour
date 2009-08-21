@@ -11,14 +11,17 @@ class TourAdapter(object):
     def __init__(self, context):
         self.context = context
 
+    @property
     def tourId(self):
         """Return the tourId."""
         return self.context.getId()
 
+    @property
     def title(self):
         """Return the title."""
         return self.context.title
 
+    @property
     def steps(self):
         """Return a dict:
         {'url': 'url',
