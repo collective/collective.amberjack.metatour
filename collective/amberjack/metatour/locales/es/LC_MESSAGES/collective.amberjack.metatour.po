@@ -1,0 +1,80 @@
+# Spanish translations for collective.amberjack.metatour package
+# Traducciones al Español del producto collective.amberjack.metatour.
+# Leonardo caballero <leonardocaballero@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.amberjack.metatour\n"
+"POT-Creation-Date: 2009-08-14 15:42+0000\n"
+"PO-Revision-Date: 2009-10-29 15:41-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: Spanish <plone-conosur@lists.plone.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-code: es\n"
+"Language-name: Spanish\n"
+"Preferred-encodings: latin1 utf-8\n"
+"Domain: collective.amberjack.metatour\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#: ../content/ajstep.py:55
+msgid "A css or xpath selector"
+msgstr "Una Hoja de estilo de cascada CSS o un selector Xpath"
+
+#: configure.zcml
+msgid "Adds content types to create an Amberjack tour"
+msgstr "Agregar tipos de contenidos para crear un visita guiada Amberjack"
+
+#: configure.zcml
+msgid "Amberjack Tour Creator (Amberjack Meta Tour)"
+msgstr "Creador de la visita guiada Amberjack (Meta visita guiada Amberjack)"
+
+#. Default: "Amberjack step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack step"
+msgstr "Paso Amberjack"
+
+#. Default: "Amberjack tour"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack tour"
+msgstr "Visita guiada Amberjack"
+
+#. Default: "Amberjack tour folder"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack tour folder"
+msgstr "Carperta de visita guiada Amberjack"
+
+#. Default: "Amberjack tour step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack tour step"
+msgstr "Paso de visita guiada Amberjack"
+
+#: ../content/ajstep.py:53
+msgid "Description"
+msgstr "Descripción"
+
+#: ../content/ajstep.py:27
+msgid "Enter a description for the user"
+msgstr "Introduzca una descripción para el usuario"
+
+#: ../content/ajstep.py:49
+msgid "Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"
+msgstr ""
+
+#: ../content/ajstep.py:54
+msgid "Step"
+msgstr "Paso"
+
+#: ../content/ajstep.py:48
+msgid "Steps"
+msgstr "Pasos"
+
+#: ../content/ajstep.py:56
+msgid "The text associated with the step"
+msgstr "El texto asociado con el paso"
+
+#: ../content/ajstep.py:26
+msgid "User's description"
+msgstr "Descripción de usuario"
+
