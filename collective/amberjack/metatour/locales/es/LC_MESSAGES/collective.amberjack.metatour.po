@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: collective.amberjack.metatour\n"
 "POT-Creation-Date: 2009-10-30 02:21+0000\n"
-"PO-Revision-Date: 2009-10-29 21:50-0400\n"
+"PO-Revision-Date: 2009-10-30 08:56-0400\n"
 "Last-Translator: Leonardo Caballero <leonardocaballero@gmail.com>\n"
 "Language-Team: Spanish <plone-conosur@lists.plone.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,6 @@ msgid "Enter a description for the user"
 msgstr "Introduzca una descripción para el usuario"
 
 #: ../content/ajstep.py:49
-#, fuzzy
 msgid "Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"
 msgstr "Introduzca:<ol> <li>la descripción para el usuario (use [] para <span class='ajHighlight'>resaltar</span> las partes)</li> <li>el identificador del paso </li> <li>un selector opcional</li> <li>un texto opcional usado por el paso</li> </ol>"
 
