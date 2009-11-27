@@ -1,0 +1,79 @@
+# Brazilian Potuguese translations for collective.amberjack.core package
+# Davi Lima <davilima6@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-08-14 15:42+0000\n"
+"PO-Revision-Date: 2009-11-26 16:51-0300\n"
+"Last-Translator: Davi Lima <davilima6@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: pt-br\n"
+"Language-Name: Brazilian Portuguese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.amberjack.metatour\n"
+"X-Is-Fallback-For: pt\n"
+
+#: ../content/ajstep.py:55
+msgid "A css or xpath selector"
+msgstr "Um seletor CSS ou XPath"
+
+#: configure.zcml
+msgid "Adds content types to create an Amberjack tour"
+msgstr "Adiciona tipos de conteúdo para criar um Tutorial Amberjack"
+
+#: configure.zcml
+msgid "Amberjack Tour Creator (Amberjack Meta Tour)"
+msgstr "Criador de Tutoriais Amberjack"
+
+#. Default: "Amberjack step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack step"
+msgstr "Passo Amberjack"
+
+#. Default: "Amberjack tour"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack tour"
+msgstr "Tutorial Amberjack"
+
+#. Default: "Amberjack tour folder"
+#: ../profiles/default/types/ajtour.xml
+msgid "Amberjack tour folder"
+msgstr "Pasta de Tutorial Amberjack"
+
+#. Default: "Amberjack tour step"
+#: ../profiles/default/types/ajstep.xml
+msgid "Amberjack tour step"
+msgstr "Passo de Tutorial Amberjack"
+
+#: ../content/ajstep.py:53
+msgid "Description"
+msgstr "Descrição"
+
+#: ../content/ajstep.py:27
+msgid "Enter a description for the user"
+msgstr "Insira uma descrição para o usuário"
+
+#: ../content/ajstep.py:49
+msgid "Enter:<ol> <li>the description for the user (use [] to <span class='ajHighlight'>highlight</span> parts)</li> <li>the step id</li> <li>an optional selector</li> <li>an optional text used by the step</li> </ol>"
+msgstr "Insira:<ol> <li>a descrição para o usuário (use [] para <span class='ajHighlight'>destacar</span> partes)</li> <li>o id do passo</li> <li>um seletor opcional</li> <li>um texto opcional usado pelo passo</li> </ol>"
+
+#: ../content/ajstep.py:54
+msgid "Step"
+msgstr "Passo"
+
+#: ../content/ajstep.py:48
+msgid "Steps"
+msgstr "Passos"
+
+#: ../content/ajstep.py:56
+msgid "The text associated with the step"
+msgstr "O texto associado com o passo"
+
+#: ../content/ajstep.py:26
+msgid "User's description"
+msgstr "Descrição do usuário"
+
