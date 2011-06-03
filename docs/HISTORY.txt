@@ -3,6 +3,9 @@ Changelog
 
 1.0 (Unreleased)
 ----------------
+
+
+- updated Spanish translation file [macagua]
 - fix browser tests [fdelia, amleczko]
 
 
